@@ -3,6 +3,9 @@ import { EyeOpenIcon, ChatBubbleIcon, InfoCircledIcon, CaretDownIcon } from '@ra
 import { violet, blackA } from '@radix-ui/colors';
 import * as TooltipPrimitive from '@radix-ui/react-tooltip';
 import { ReactNode } from 'react';
+import { Tote} from 'phosphor-react';
+
+
 
 const slideUpAndFade = keyframes({
   '0%': { opacity: 0, transform: 'translateY(2px)' },
@@ -66,13 +69,12 @@ function Content({ children, ...props  }: ContentProps) {
   );
 }
 
-// Exports
 export const Provider = TooltipPrimitive.Provider;
 export const Tooltip = TooltipPrimitive.Root;
 export const TooltipTrigger = TooltipPrimitive.Trigger;
 export const TooltipContent = Content;
 
-// Your app...
+
 const IconButton = styled('button', {
   all: 'unset',
   fontFamily: 'inherit',
@@ -151,6 +153,29 @@ export const TooltipDown = () => {
         </TooltipTrigger>
         <TooltipContent sideOffset={5} >
           Scroll Down
+        </TooltipContent>
+      </Tooltip>
+    </Provider>
+  );
+};
+
+export interface TooltipButton {
+  icon?: ReactNode;
+  text?: string;
+}
+
+export const TooltipButton = ({icon, text}: TooltipButton) => {
+  const bag = <Tote />
+  return (
+    <Provider delayDuration={0}>
+      <Tooltip>
+        <TooltipTrigger asChild>
+          <IconButton>
+            {icon}
+          </IconButton>
+        </TooltipTrigger>
+        <TooltipContent sideOffset={5} >
+          {text}
         </TooltipContent>
       </Tooltip>
     </Provider>

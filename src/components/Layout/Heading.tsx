@@ -8,6 +8,7 @@ import { Text } from '../Layout/Text';
 
 import { MagnifyingGlass, CaretDown } from 'phosphor-react'
 import { NavBar } from './NavBar';
+import { HoverCardUser } from './HoverCard';
 
 
 export interface HeadingProps {
@@ -48,7 +49,7 @@ export function Heading () {
                             hidden mr-2
                             lg:block'
                         >
-                            <UserLog />
+                            <HoverCardUser />
                         </Text>
 
                     </form>

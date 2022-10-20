@@ -1,6 +1,7 @@
 import { List } from "phosphor-react";
 import { Link } from "react-router-dom";
-import { UserLog } from "./User";
+import { HoverCardUser } from "./HoverCard";
+
 
 function OpenNavBar(){
     const overlay = document.getElementById('btnNav')!;
@@ -39,14 +40,14 @@ export function NavBar() {
             </button>   
 
             <nav id="btnNav"
-                className='z-50 h-[15vh] bg-white-500 m-0 relative w-0 overflow-hidden duration-200'
+                className='h-[15vh] bg-white-500 m-0 relative w-0 overflow-hidden duration-200'
             >
                 <div className='h-8 items-center flex text-[28px] w-[100vw] bg-purple-900 bg-opacity-75 text-white-Total'>
                     <button id='OpenOverlay' onClick={CloseNavBar} >
                         <List />
                     </button>
-                    <div id='UserLog' className='absolute right-1'>
-                        <UserLog />
+                    <div id='UserLog' className=' absolute right-1'>
+                        <HoverCardUser />
                     </div>
                 </div>
 
