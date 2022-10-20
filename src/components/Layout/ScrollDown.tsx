@@ -1,4 +1,4 @@
-import { TooltipDown } from "./FnTooltip";
+import { TooltipDown } from "../Layout/FnTooltip";
 
 
 export function ScrollDown () {

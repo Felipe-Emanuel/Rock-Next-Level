@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import Carousel from 'react-bootstrap/Carousel';
 
 import { AvatarUser } from "./Avatar";
-import { Text } from "./Text";
+import { Text } from "../Layout/Text";
 
 export function Footer () {
     return (

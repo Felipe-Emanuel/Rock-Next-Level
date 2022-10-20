@@ -1,10 +1,10 @@
 import './styles/global.css'
 
-import { Body } from './components/Body'
-import { Heading } from './components/Heading'
-import { NavBar } from './components/NavBar'
-import { AnimateScroll } from './components/AnimateScroll'
-import { Footer } from './components/Footer'
+import { Body } from './components/Layout/Body'
+import { Heading } from './components/Layout/Heading'
+import { NavBar } from './components/Layout/NavBar'
+import { AnimateScroll } from './components/Layout/AnimateScroll'
+import { Footer } from './components/Layout/Footer'
 
 
 

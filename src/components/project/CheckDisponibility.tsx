@@ -2,9 +2,9 @@ import { ReactNode } from 'react';
 import { Slot } from '@radix-ui/react-slot';
 import { clsx } from 'clsx';
 
-import { TooltipChat } from './FnTooltip';
+import { TooltipChat } from '../Layout/FnTooltip';
 
-import { Text } from './Text'
+import { Text } from '../Layout/Text'
 
 export interface CheckDisponibilityProps {
     children?: ReactNode;

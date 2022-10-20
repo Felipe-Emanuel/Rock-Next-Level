@@ -1,15 +1,15 @@
 import { CaretDown } from "phosphor-react";
-import { Text } from "./Text";
+import { Text } from "../Layout/Text";
 
 export function Down() {
 
     return (
         <div data-animate='left'
             className='
-            z-50 hidden font-light fixed mt-24 
+            z-50 hidden font-light fixed bottom-16 left-0
             md:flex md:flex-col'
         >
-            <div className='
+            <div className=' 
                 ml-1 w-6 h-6 animate-bounce items-center
                 md:flex md:flex-col'>
                     <Text className='text-[10px]' >

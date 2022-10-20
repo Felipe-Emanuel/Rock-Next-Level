@@ -3,9 +3,9 @@ import { Slot } from '@radix-ui/react-slot';
 
 import { clsx } from 'clsx';
 
-import { Text } from './Text'
+import { Text } from '../Layout/Text'
 
-import { TooltipEye } from './FnTooltip';
+import { TooltipEye } from '../Layout/FnTooltip';
 
 export interface ShowMoreProps {
     children?: ReactNode;

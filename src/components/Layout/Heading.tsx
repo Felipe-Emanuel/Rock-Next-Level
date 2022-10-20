@@ -1,9 +1,9 @@
 import { ReactNode } from 'react';
 
-import { Button } from './Button';
-import { TextInput } from './TextInput';
+import { Button } from '../Form/Button';
+import { TextInput } from '../Form/TextInput';
 import { UserLog } from './User';
-import { Text } from './Text';
+import { Text } from '../Layout/Text';
 
 import { MagnifyingGlass, CaretDown } from 'phosphor-react'
 
@@ -14,7 +14,8 @@ export interface HeadingProps {
 
 export function Heading () {
     return (
-            <div className='bg-topbackground w-[100%] h-[80vh] sm:h-[75vh] bg-cover bg-center'>
+            <div className='bg-topbackground w-full h-full bg-cover bg-center'
+            >
 
                 <div className='
                     flex-row max-w-4xl m-auto
@@ -40,7 +41,10 @@ export function Heading () {
                             </TextInput.Root>
                         </label>
                             
-                        <Text className='mr-2'>
+                        <Text className='
+                            hidden mr-2
+                            sm:block'
+                        >
                             <UserLog />
                         </Text>
 
@@ -81,9 +85,12 @@ export function Heading () {
                     Over 30.000 deliveries made worldwide, taking your to rock Next Level
                 </Text>
             </div>
-            <div className='flex justify-center'>
-                <Button className='center font-extralight ring-1'>
-                    Buy With Us
+            <div className='flex justify-center m-auto'>
+                <Button className='
+                    text-[12px] mb-8 font-extralight ring-1
+                    sm:text-[16px]'
+                >
+                    BUY WITH US
                 </Button>
             </div>
             </div>

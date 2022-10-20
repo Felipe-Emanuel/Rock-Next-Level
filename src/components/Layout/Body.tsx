@@ -1,13 +1,14 @@
 import { Chat } from "./Chat";
 import { Down } from "./Down";
-import { GuitarCard } from "./GuitarCard";
-import { LastReview } from "./LastReview";
+import { GuitarCard } from "../project/GuitarCard";
+import { LastReview } from "../Layout/LastReview";
 import { ScrollDown } from "./ScrollDown";
-import { Text } from "./Text";
+import { Text } from "../Layout/Text";
 
 export function Body () {
     return (
         <div className='bg-white-500'>
+
                 <Chat />
                 <Down />
 

@@ -2,8 +2,8 @@ import { ReactNode } from 'react';
 import { Slot } from '@radix-ui/react-slot';
 import { clsx } from 'clsx';
 
-import { Text } from "./Text";
-import { TooltipInfo } from "./FnTooltip";
+import { Text } from "../Layout/Text";
+import { TooltipInfo } from "../Layout/FnTooltip";
 
 export interface EspecificationsProps {
     children?: ReactNode;
