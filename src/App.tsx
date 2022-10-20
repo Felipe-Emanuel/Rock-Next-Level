@@ -4,6 +4,7 @@ import { Body } from './components/Body'
 import { Heading } from './components/Heading'
 import { NavBar } from './components/NavBar'
 import { AnimateScroll } from './components/AnimateScroll'
+import { Footer } from './components/Footer'
 
 
 
@@ -11,13 +12,13 @@ function App() {
 
   return (
     <>
-    <div className='lg:hidden h-0'>
-
-      <NavBar />
-    </div>
       <AnimateScroll />
-      <Heading />
-      <Body />
+      <div className='lg:hidden h-0'>
+        <NavBar />
+      </div>
+        <Heading />
+        <Body />
+        <Footer />
     </>
   )
 }

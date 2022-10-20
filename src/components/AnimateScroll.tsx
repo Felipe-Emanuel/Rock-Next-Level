@@ -2,7 +2,7 @@ export function AnimateScroll() {
     
     const animeScroll = () => {
         const item = document.querySelectorAll('[data-animate]');
-        const windowTop = window.pageYOffset + window.innerHeight * 0.80;
+        const windowTop = window.pageYOffset + window.innerHeight * .85;
 
         item.forEach(el => {
                 if (el instanceof HTMLElement && windowTop > el.offsetTop ) {

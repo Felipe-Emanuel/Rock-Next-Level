@@ -39,13 +39,13 @@ export function ShowMore({ className, asChield, children }: ShowMoreProps) {
                 <div className='flex flex-col'>
 
                     <Text className='
-                        text-start font-light cursor-pointer hover:shadow-xl
+                        text-start font-light cursor-pointer hover:underline
                         text-[10px]
                         sm:text-[14px]
                         md:text-[16px]
                         lg:w-24'
                     >
-                        <a href=''>Show More</a>
+                        <a href='' className='no-underline text-black'>Show More</a>
 
                     </Text>
 

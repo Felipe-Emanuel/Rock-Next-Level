@@ -7,14 +7,16 @@ import { Text } from "./Text";
 
 export function Body () {
     return (
-        <div>
+        <div className='bg-white-500'>
                 <Chat />
                 <Down />
 
-            <header>
-                <ScrollDown />
+            <header >
+                <div>
+                    <ScrollDown />
+                </div>
                 <Text className='
-                    text-[22px] mt-16 animate-pulse font-light flex justify-center text-center 
+                    text-[22px] animate-pulse font-light flex justify-center text-center  
                     sm:text-[24px]
                     md:text-[48px]'
                 >
@@ -25,18 +27,26 @@ export function Body () {
             </header>
 
             <main>
-                <Text className='
-                    text-[22px] mt-16 animate-pulse font-light flex justify-center 
-                    sm:text-[24px]
-                    md:text-[48px]'
-                >
-                                    
-                    <h2 data-animate='left' >LAST REVIEW</h2>
-                </Text>
-                <LastReview />
-                
+                <div id='last-review'>
+                    <Text className='
+                        text-[22px] mt-16 animate-pulse font-light flex justify-center text-center 
+                        sm:text-[24px]
+                        md:text-[48px]'
+                    >
+                        <h2 data-animate='left'>LAST REVIEW</h2>
+                    </Text>
+                    <LastReview />
+                </div>
+                <div id="for-sale">
+                    <Text className='
+                        text-[22px] mt-16 animate-pulse font-light flex justify-center text-center 
+                        sm:text-[24px]
+                        md:text-[48px]'
+                    >
+                        <h2 data-animate='rigth'>FOR SALE!</h2>
+                    </Text>
+                </div>
             </main>
-
         </div>
     )
 }

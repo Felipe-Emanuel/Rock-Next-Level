@@ -2,27 +2,33 @@
 @tailwind utilities;
 @tailwind components;
 
-/* Works on Chrome, Edge, and Safari */
+.overflow-y-scroll::-webkit-scrollbar {
+  width: 3px; 
+}
+
+.overflow-y-scroll::-webkit-scrollbar-track {
+    background-image: linear-gradient(180deg, purple, white);    
+    border-radius: 100px;  
+}
+
 body::-webkit-scrollbar {
   width: 6px;  
 }
 
 body::-webkit-scrollbar-track {
-    background-image: white;   
+    background: #eee;   
 }
 
 body::-webkit-scrollbar-thumb {
     border: 1px solid #4B0082; 
     border-radius: 20px;  
-    
 }
 
 body::-webkit-scrollbar-thumb:hover {
-    transition: 1s;
     background-image: linear-gradient(180deg, black, purple);    
 }
 
-/*Animation*/
+/*Scroll Down Animation*/
 
 [data-animate] {
     opacity: 0;

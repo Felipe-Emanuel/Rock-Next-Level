@@ -32,11 +32,11 @@ export function CheckDisponibility({ className, asChield, children }: CheckDispo
             <div className='flex flex-col'>
 
                 <Text className='
-                    text-[10px] font-light cursor-pointer hover:shadow-xl
+                    text-[10px] font-light cursor-pointer hover:underline
                     sm:text-[14px]
                     md:text-[16px]'
                 >
-                    <a href=''>Disponibility</a>
+                    <a href='' className='no-underline text-black'>Disponibility</a>
 
                 </Text>
 

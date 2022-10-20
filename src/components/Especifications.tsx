@@ -39,18 +39,19 @@ export function Especifications({ className, asChield, children }: Especificatio
                 <div className='flex flex-col'>
 
                     <Text className='
-                        font-light cursor-pointer hover:shadow-xl
+                        font-light cursor-pointer hover:underline
                         text-[10px]
                         sm:text-[14px]
                         md:text-[16px]'
                     >
 
-                        <p className='
+                        <a href='' className='
+                            no-underline text-black
                             sm:w-20 sm:truncate
                             md:w-auto'
                         >
                             Especifications
-                        </p>
+                        </a>
 
                     </Text>
                 </div>
