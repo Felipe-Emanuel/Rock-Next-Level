@@ -7,7 +7,7 @@ import { Text } from "../Layout/Text";
 
 export function Footer () {
     return (
-        <footer className='bg-purple-900 h-[25%] bg-gradient-to-b from-white-500'>
+        <footer className='bg-purple-900 bg-gradient-to-b from-white-500'>
                 <div className='text-center'>
                     <Carousel >
                         

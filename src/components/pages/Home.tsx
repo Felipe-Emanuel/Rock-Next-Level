@@ -1,13 +1,19 @@
-import { Chat } from "./Chat";
-import { Down } from "./Down";
+import { Footer } from "../Layout/Footer";
+import { Heading } from "../Layout/Heading";
+
+import { Chat } from "../Layout/Chat";
+import { Down } from "../Layout/Down";
 import { GuitarCard } from "../project/GuitarCard";
 import { LastReview } from "../Layout/LastReview";
-import { ScrollDown } from "./ScrollDown";
+import { ScrollDown } from "../Layout/ScrollDown";
 import { Text } from "../Layout/Text";
+import { Link } from "react-router-dom";
 
-export function Body () {
+export function Home() {
     return (
-        <div className='bg-white-500'>
+        <>
+            <Heading />
+            <div className='bg-white-500'>
 
                 <Chat />
                 <Down />
@@ -36,7 +42,9 @@ export function Body () {
                     >
                         <h2 data-animate='left'>LAST REVIEW</h2>
                     </Text>
-                    <LastReview />
+                    <Link to='/LastReviewPage'>
+                        <LastReview />
+                    </Link>
                 </div>
                 <div id="for-sale">
                     <Text className='
@@ -49,5 +57,7 @@ export function Body () {
                 </div>
             </main>
         </div>
+            <Footer />
+        </>
     )
 }

@@ -1,10 +1,13 @@
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+
 import './styles/global.css'
 
-import { Body } from './components/Layout/Body'
-import { Heading } from './components/Layout/Heading'
-import { NavBar } from './components/Layout/NavBar'
 import { AnimateScroll } from './components/Layout/AnimateScroll'
-import { Footer } from './components/Layout/Footer'
+import { Home } from './components/pages/Home'
+import { Contact } from './components/pages/Contact';
+import { About } from './components/pages/About';
+import { Utilitys } from './components/pages/Utilitys';
+import { LastReviewPage } from './components/pages/LastReviewPage';
 
 
 
@@ -12,13 +15,17 @@ function App() {
 
   return (
     <>
-      <AnimateScroll />
-      <div className='lg:hidden h-0'>
-        <NavBar />
-      </div>
-        <Heading />
-        <Body />
-        <Footer />
+      <Router>
+        <AnimateScroll />
+        
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/contact' element={<Contact />} />
+          <Route path='/about' element={<About />} />
+          <Route path='/utilitys' element={<Utilitys />} />
+          <Route path='/LastReviewPage' element={<LastReviewPage />} />
+        </Routes>
+      </Router>
     </>
   )
 }

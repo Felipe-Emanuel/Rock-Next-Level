@@ -6,11 +6,11 @@ import { Especifications } from './Especifications';
 export interface GuitarCardProps {
     children?: ReactNode;
 }
-
 export function GuitarCard(){
     return (
-        <div className='
-            mt-16 flex flex-col mr-[50%]
+
+        <div className='w-0
+            mt-16 flex flex-col 
             sm:flex-row sm:w-[75vw] 
             md:flex-row md:w-[75vw] 
             lg:w-[75vw] lg:m-auto lg:mt-16
@@ -18,16 +18,16 @@ export function GuitarCard(){
         >
             
             <div data-animate='left' className='
-                w-28 flex flex-row m-auto
+                w-28 flex flex-row m-auto 
                 md:w-32
                 lg:w-48'
             >
 
-                    <img className='w-72 m-auto'
+                    <img className='w-72 m-auto '
                         src='./img/card-1.png'
                         alt='Guitar Gibson LP 230 Cherry'
                     />
-                    <div id='Show-and-check'>
+                    <div id='Show-and-check '>
                         <ShowMore />
                         <CheckDisponibility />
                         <Especifications />
@@ -36,7 +36,7 @@ export function GuitarCard(){
             </div>
 
             <div data-animate='right' className='
-                w-28 flex flex-row m-auto mt-16
+                w-28 flex flex-row m-auto 
                 sm:m-auto
                 md:w-32
                 lg:w-48'
@@ -46,7 +46,7 @@ export function GuitarCard(){
                         src='./img/card-1.png'
                         alt='Guitar Gibson LP 230 Cherry'
                     />
-                    <div id='Show-and-check'>
+                    <div className='mt-16 sm:mt-0' id='Show-and-check'>
                         <ShowMore />
                         <CheckDisponibility />
                         <Especifications />

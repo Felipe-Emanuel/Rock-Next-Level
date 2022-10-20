@@ -1,17 +1,22 @@
-import { User, CaretDown } from 'phosphor-react'
-import { Text } from './Text'
+import { Slot } from '@radix-ui/react-slot';
+import { clsx } from 'clsx';
 
+import { AvatarLoginUser } from './Avatar';
 
-export function UserLog () {
+export interface UserLogProps {
+    className?: string;
+    asChield?: boolean;
+    id?: string;
+}
+
+export function UserLog ({id, className, asChield}: UserLogProps) {
+    const Comp = asChield ? Slot : 'button';
+
     return (
-        <div className='flex flex-col items-center'>
-            <User className='w-6 xl:w-20 text-lightPink mt-8 h-10  hover:text-white-Total' />
-            <Text className='text-sm text-lightPink flex flex-row gap-2 m-auto hover:text-white-Total'>
-                Login
-                <button>
-                    <CaretDown className='text-lightPink hover:text-white-Total hover:animate-bounce'/>
-                </button>
-            </Text>
-        </div>
+        <Comp className={clsx(className, id)}>
+            <div className='flex'>
+                <AvatarLoginUser className='ring-2 ring-lightPink rounded-full hover:ring-white-500 hover:scale-110'/>
+            </div>
+        </Comp>
     )
 }
